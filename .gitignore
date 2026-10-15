@@ -1,0 +1,32 @@
+﻿# WordPress Core & Sensitive Config
+wp-config.php
+*.env
+*.log
+
+# Database Dumps & Backups
+*.sql
+*.sql.gz
+backups/
+
+# User Uploads, Upgrade, Cache
+uploads/
+upgrade/
+cache/
+
+# Third-party Plugins
+plugins/woocommerce/
+
+# Third-party & Core Parent Themes
+themes/twentytwentyfive/
+themes/twentytwentyfour/
+themes/twentytwentythree/
+themes/interior-design-firm/
+themes/interior-design-wda/
+themes/luxury-interior/
+themes/modern-architecture-design/
+
+# OS & Editor Artifacts
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
