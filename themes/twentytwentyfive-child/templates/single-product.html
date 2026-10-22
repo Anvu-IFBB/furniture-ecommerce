@@ -1,0 +1,108 @@
+<!-- wp:template-part {"slug":"header"} /-->
+
+<!-- wp:group {"tagName":"main","className":"site-main single-product-main","layout":{"type":"constrained"}} -->
+<main class="wp-block-group site-main single-product-main" id="primary-content">
+
+	<!-- BREADCRUMBS & BACK LINK -->
+	<!-- wp:group {"className":"single-product-breadcrumbs-wrap site-container-wide","layout":{"type":"flex","justifyContent":"space-between","alignItems":"center","flexWrap":"wrap"}} -->
+	<div class="wp-block-group single-product-breadcrumbs-wrap site-container-wide">
+		<!-- wp:woocommerce/breadcrumbs /-->
+		<!-- wp:paragraph {"className":"single-product-back-link"} -->
+		<p class="single-product-back-link"><a href="/shop/" class="atelier-back-link">&larr; Return to Collection</a></p>
+		<!-- /wp:paragraph -->
+	</div>
+	<!-- /wp:group -->
+
+	<!-- wp:woocommerce/store-notices /-->
+
+	<!-- 2-COLUMN HERO PRODUCT SECTION -->
+	<!-- wp:columns {"className":"single-product-layout site-container-wide","align":"wide"} -->
+	<div class="wp-block-columns single-product-layout site-container-wide alignwide">
+		
+		<!-- LEFT: GALLERY -->
+		<!-- wp:column {"width":"52%","className":"single-product-media-col"} -->
+		<div class="wp-block-column single-product-media-col" style="flex-basis:52%">
+			<!-- wp:woocommerce/product-image-gallery /-->
+		</div>
+		<!-- /wp:column -->
+
+		<!-- RIGHT: PRODUCT SUMMARY & ACTIONS -->
+		<!-- wp:column {"width":"48%","className":"single-product-summary-col"} -->
+		<div class="wp-block-column single-product-summary-col" style="flex-basis:48%">
+			
+			<!-- wp:group {"className":"product-summary-header","layout":{"type":"flex","justifyContent":"space-between","alignItems":"center","flexWrap":"wrap"}} -->
+			<div class="wp-block-group product-summary-header">
+				<!-- wp:post-terms {"term":"product_cat","className":"product-category-eyebrow"} /-->
+				<!-- wp:woocommerce/product-sku {"className":"product-sku-tag"} /-->
+			</div>
+			<!-- /wp:group -->
+
+			<!-- wp:post-title {"level":1,"className":"product-title-editorial","__woocommerceNamespace":"woocommerce/product-query/product-title"} /-->
+
+			<!-- wp:woocommerce/product-rating {"isDescendentOfSingleProductTemplate":true,"className":"product-rating-editorial"} /-->
+
+			<!-- wp:woocommerce/product-price {"isDescendentOfSingleProductTemplate":true,"fontSize":"large","className":"product-price-editorial"} /-->
+
+			<!-- wp:post-excerpt {"className":"product-excerpt-editorial","__woocommerceNamespace":"woocommerce/product-query/product-summary","excerptLength":100} /-->
+
+			<!-- wp:woocommerce/add-to-cart-form {"className":"product-add-to-cart-wrap"} /-->
+
+			<!-- MATERIAL & ATELIER DETAILS BOX -->
+			<div class="atelier-provenance-box">
+				<div class="provenance-item">
+					<span class="provenance-icon" aria-hidden="true">&loz;</span>
+					<div>
+						<strong class="provenance-title">Solid Timber Character</strong>
+						<p class="provenance-desc">Selected solid white oak and dark walnut timbers showcasing distinctive natural grain patterns and warm organic tones.</p>
+					</div>
+				</div>
+				<div class="provenance-item">
+					<span class="provenance-icon" aria-hidden="true">&loz;</span>
+					<div>
+						<strong class="provenance-title">Architectural Joinery</strong>
+						<p class="provenance-desc">Traditional mortise and tenon proportions celebrating refined structural balance and understated tactile presence.</p>
+					</div>
+				</div>
+				<div class="provenance-item">
+					<span class="provenance-icon" aria-hidden="true">&loz;</span>
+					<div>
+						<strong class="provenance-title">Curated Atelier Care</strong>
+						<p class="provenance-desc">Individual workshop inspection, protective transit packaging, and thoughtful presentation for each design piece.</p>
+					</div>
+				</div>
+			</div>
+
+			<!-- wp:woocommerce/product-meta {"className":"product-meta-editorial"} -->
+			<div class="wp-block-woocommerce-product-meta product-meta-editorial">
+				<!-- wp:group {"layout":{"type":"flex","flexWrap":"wrap"}} -->
+				<div class="wp-block-group">
+					<!-- wp:post-terms {"term":"product_tag","prefix":"Tags: ","className":"product-tags-list"} /-->
+				</div>
+				<!-- /wp:group -->
+			</div>
+			<!-- /wp:woocommerce/product-meta -->
+
+		</div>
+		<!-- /wp:column -->
+
+	</div>
+	<!-- /wp:columns -->
+
+	<!-- DETAILED SPECIFICATIONS TABS -->
+	<!-- wp:group {"className":"single-product-details-wrap site-container-wide","layout":{"type":"constrained"}} -->
+	<div class="wp-block-group single-product-details-wrap site-container-wide">
+		<!-- wp:woocommerce/product-details {"align":"wide","className":"is-style-minimal atelier-product-details"} /-->
+	</div>
+	<!-- /wp:group -->
+
+	<!-- RELATED CURATIONS -->
+	<!-- wp:group {"className":"single-product-related-wrap site-container-wide","layout":{"type":"constrained"}} -->
+	<div class="wp-block-group single-product-related-wrap site-container-wide">
+		<!-- wp:pattern {"slug":"woocommerce-blocks/related-products"} /-->
+	</div>
+	<!-- /wp:group -->
+
+</main>
+<!-- /wp:group -->
+
+<!-- wp:template-part {"slug":"footer"} /-->
